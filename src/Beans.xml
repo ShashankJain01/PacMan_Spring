@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd"
+    default-init-method="initial" default-destroy-method="destroy">
+    
+ <bean id="gridDetails" class="main.GridDetails">
+    <!--  <property name="email" value=""/>
+      <property name="email1"><null/></property>
+     -->
+      <property name="gridList">
+         <list>
+            <value>10,10,1</value>
+            <value>10,10,10</value>
+            <value>10,10,2</value>
+         </list>
+      </property>
+        <property name="pacdirection" value="LEFT"/>
+        <property name="pacpositionx"  value="0"/>
+        <property name="pacpositiony" value="2"/>
+        <property name="monsterpositionx" value="2"/>
+        <property name="monsterpositiony" value="2"/>
+        <property name="pacvalue" value="1"/>
+        <property name="monstervalue" value="2"/>
+        <property name="points" value="10"/>
+        <property name="defaultvalue" value="0"/>
+        <property name="min" value="0"/>
+        <property name="max" value="2"/>
+        <property name="pacdirectionset">
+         <set>
+            <value>UP</value>
+            <value>DOWN</value>
+            <value>LEFT</value>
+            <value>RIGHT</value>
+        </set>
+      </property>
+    </bean>
+   
+</beans>
